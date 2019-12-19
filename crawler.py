@@ -22,6 +22,8 @@ def get_all_href(url):
             get_article_content(article_url='https://www.ptt.cc'+a_item.get('href'))
     print('------------------ next page ------------------')
     
+    
+
 for page in range(1,4):
     r = requests.get(url)
     soup = BeautifulSoup(r.text, "lxml")
